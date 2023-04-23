@@ -1,6 +1,6 @@
 import React from 'react'
 import {useNavigate} from 'react-router-dom'
-function OverviewBtn() {
+function OverviewBtn(props) {
     const navigate = useNavigate()
   return (
     <div>
