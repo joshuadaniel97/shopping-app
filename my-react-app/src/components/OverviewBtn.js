@@ -1,12 +1,16 @@
-import React from 'react'
-import {useNavigate} from 'react-router-dom'
-function OverviewBtn() {
-    const navigate = useNavigate()
+import React from "react";
+
+function OverviewBtn(props) {
+  function handleClick() {
+    console.log("overview button clicked");
+    props.showOverViewPage();
+  }
+
   return (
     <div>
-      <button onClick={() => navigate('basket-overview')}>Overview</button>
+      <button onClick={handleClick}>Overview</button>
     </div>
-  )
+  );
 }
 
-export default OverviewBtn
+export default OverviewBtn;
